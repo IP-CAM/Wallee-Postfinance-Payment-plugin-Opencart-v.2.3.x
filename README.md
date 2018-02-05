@@ -10,7 +10,7 @@ This repository contains the Opencart wallee payment module that enables the sho
 
 ## Documentation
 
-* [Getting Started](https://github.com/wallee-payment/Opencart-2.3/wiki/Getting-Started)
+* Coming soon
 
 ## License
 
