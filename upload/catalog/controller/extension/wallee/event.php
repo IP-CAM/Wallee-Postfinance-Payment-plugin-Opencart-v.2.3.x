@@ -8,7 +8,7 @@ require_once modification(DIR_SYSTEM . 'library/wallee/helper.php');
 class ControllerExtensionWalleeEvent extends Wallee\Controller\AbstractEvent {
 
 	public function includeScripts(){
-		try{
+		try {
 			\WalleeHelper::instance($this->registry)->refreshWebhook();
 			$this->includeCronScript();
 			$this->includeDeviceIdentifier();
@@ -91,7 +91,7 @@ class ControllerExtensionWalleeEvent extends Wallee\Controller\AbstractEvent {
 			return;
 		}
 		
-		if (\WalleeHelper::isCompletableState($transaction_info->getState())) {
+		if (\WalleeHelper::isEditableState($transaction_info->getState())) {
 			// changing line items still permitted
 			return;
 		}

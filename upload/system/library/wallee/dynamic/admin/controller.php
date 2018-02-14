@@ -258,7 +258,7 @@ abstract class ControllerExtensionPaymentWalleeBase extends AbstractController {
 		
 		return $labels;
 	}
-	
+
 	/**
 	 *
 	 * @param map[string, string] $labels Translateable labels, from entities
