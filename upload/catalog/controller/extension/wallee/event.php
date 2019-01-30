@@ -24,7 +24,7 @@ class ControllerExtensionWalleeEvent extends Wallee\Controller\AbstractEvent {
 	 * @param array $parameters
 	 * @param object $output
 	 */
-	private function includeCronScript(){
+	public function includeCronScript(){
 		\Wallee\Entity\Cron::cleanUpHangingCrons($this->registry);
 		\Wallee\Entity\Cron::insertNewPendingCron($this->registry);
 		
@@ -44,7 +44,7 @@ class ControllerExtensionWalleeEvent extends Wallee\Controller\AbstractEvent {
 	 * @param array $parameters
 	 * @param object $output
 	 */
-	private function includeDeviceIdentifier(){
+	public function includeDeviceIdentifier(){
 		$script = \WalleeHelper::instance($this->registry)->getBaseUrl();
 		$script .= '/s/[spaceId]/payment/device.js?sessionIdentifier=[UniqueSessionIdentifier]';
 		

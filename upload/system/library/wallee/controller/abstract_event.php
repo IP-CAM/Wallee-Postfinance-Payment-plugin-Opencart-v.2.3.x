@@ -3,8 +3,10 @@
 namespace Wallee\Controller;
 
 abstract class AbstractEvent extends AbstractController {
-	
-	protected function validateOrder(){
-		// no order required
+
+	protected function validate(){
+		$this->language->load('extension/payment/wallee');
+		$this->validatePermission();
+		// skip valdiating order.
 	}
 }
