@@ -3,13 +3,13 @@
 	<code>WalleeFrontendPdf</code>
 	<name>wallee customer pdf: Allow customers to download invoices and packing slips.
 	</name>
-	<version>1.0.1</version>
+	<version>1.1.0</version>
 	<author>Customweb GmbH</author>
 	<link>http://github.com/wallee-payment/opencart</link>
 	<file path="catalog/controller/account/order.php">
 		<operation>
 			<search><![CDATA[
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/account/order_info.tpl')) {
+			$this->response->setOutput($this->load->view('account/order_info', $data));
             ]]></search>
 			<add position="before"><![CDATA[
 			$this->load->model('extension/wallee/order');
