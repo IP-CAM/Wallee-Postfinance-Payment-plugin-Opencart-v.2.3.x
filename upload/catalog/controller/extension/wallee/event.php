@@ -9,7 +9,6 @@ class ControllerExtensionWalleeEvent extends Wallee\Controller\AbstractEvent {
 
 	public function includeScripts(){
 		try {
-			\WalleeHelper::instance($this->registry)->refreshWebhook();
 			$this->includeCronScript();
 			$this->includeDeviceIdentifier();
 		}
