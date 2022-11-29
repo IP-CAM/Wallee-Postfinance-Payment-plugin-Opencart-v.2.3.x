@@ -271,14 +271,14 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><?php echo $entry_version; ?></label>
 							<div class="col-sm-10">
-								<p class="form-control-static">1.0.52</p>
+								<p class="form-control-static">1.0.53</p>
 							</div>
 						</div>
 	
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><?php echo $entry_date; ?></label>
 							<div class="col-sm-10">
-								<p class="form-control-static">2022/10/24 14:53:59</p>
+								<p class="form-control-static">2022/11/29 17:29:38</p>
 							</div>
 						</div>
 					</fieldset>
